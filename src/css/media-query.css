@@ -1,5 +1,5 @@
 @media (min-width: 450px) {
-    body {
+    .container {
         max-width: 1440px;
         background: url('../images/bg-pattern-top-desktop.svg')no-repeat top left,  
                     url('../images/bg-pattern-bottom-desktop.svg') no-repeat bottom right;
@@ -25,7 +25,7 @@
 
 
 @media (min-width: 992px) {
-    body {
+    .container {
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(3, auto);
