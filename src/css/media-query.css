@@ -1,0 +1,138 @@
+@media (min-width: 450px) {
+    body {
+        max-width: 1440px;
+        background: url('../images/bg-pattern-top-desktop.svg')no-repeat top left,  
+                    url('../images/bg-pattern-bottom-desktop.svg') no-repeat bottom right;
+    }
+
+    .cabecalho {
+        margin:0 auto 2rem;
+    }
+
+    .container__star div {
+        width: 50%;
+        min-width: 300px;
+        margin: 1rem auto;
+
+    }
+
+    .container__comment .box {
+        width: 60%;
+        min-width: 350px;
+        margin: 1rem auto;
+    }
+}
+
+
+@media (min-width: 992px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+
+        grid-template-areas: 
+        "cabecalho container__star"
+        "container__comment container__comment"
+        "attribution attribution"
+        ;
+        padding: 3rem;
+        margin: 0 auto;
+        height: 100vh;
+    }
+
+    
+    /* Cabecalho */
+    
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        grid-area: cabecalho;
+        margin: 0;
+
+        text-align: left;
+        
+    }
+
+    .cabecalho h1 {
+        font-size: 52px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .cabecalho p {
+        font-size: 18px;
+        width: 100%;
+        line-height: 28px;
+    }
+
+    /* container__star */
+
+    .container__star {
+        grid-area: container__star;
+        margin: 0;
+    }
+
+    .container__star div {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+        width: 80%;
+    }
+
+    .container__star .reviews {
+        margin-top: 4rem;
+    }
+
+    .container__star .report {
+        margin-left: 50px;
+    }
+
+    .container__star .tech {
+        margin-left: 100px;
+    }
+
+    .container__star .star__texto {
+        margin: 0;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+
+    
+    
+    /* container__comment */
+
+    .container__comment {
+        grid-area: container__comment;
+        display: flex;
+        margin-top: 4rem;
+        height: 100%;
+    }
+
+    .container__comment .box {
+        width: 420px;
+        height: 250px;
+        margin: 0;
+    }
+
+
+    .container__comment .box__2 {
+        margin: 2rem ;
+    }
+   
+    .container__comment .box__3 {
+        margin: 4rem 0rem;
+    }
+
+    .container__comment .item {
+        margin-bottom: 4rem;
+    }
+  
+    .attribution {
+        grid-area: attribution;
+    }
+
+    
+}

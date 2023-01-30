@@ -18,7 +18,8 @@ body {
     margin: 0 auto;
     padding: 2rem;
 
-    background-color: var(--White);
+    background: url('../images/bg-pattern-top-mobile.svg')no-repeat top ,  
+                url('../images/bg-pattern-bottom-mobile.svg') no-repeat bottom;
 }
 
 /* cabecalho */
@@ -43,11 +44,6 @@ body {
     line-height: 20px;
 }
 
-/* container */
-
-.container {
-    text-align: center;
-}
 /* container__star */
 
 .container__star {
