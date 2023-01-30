@@ -1,61 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 
     <title>Frontend Mentor | Social proof section</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
+
   <body>
-    10,000+ of our users love our products.
+    <header class="cabecalho">
+      <h1>10,000+ of our users love our products.</h1>
+      <p>We only provide great products combined with excellent customer service.
+        See what our satisfied customers are saying about our services.</p>
+    </header>
+    
+    <main class="container">
+      <section class="container__star">
+        <div class="reviews">
+          <ul>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <p class="star__texto">Rated 5 Stars in Reviews</p>
+        </div>
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+        <div class="report">
+          <ul>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <p class="star__texto">Rated 5 Stars in Report Guru</p>
+        </div>
 
-    <div class="attribution">
+        <div class="tech">
+          <ul>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <p class="star__texto">Rated 5 Stars in BestTech</p>
+        </div>
+      </section>
+
+      <section class="container__comment">
+        <div class="box">
+          <div class="item">
+            <img src="./src/images/image-colton.jpg" alt="Colton Smith">
+            <p class="box__nome">Colton Smith <span>Verified Buyer</span></p>
+          </div>
+
+          <p class="box__comment">"We needed the same printed design as the one we had ordered a week prior.
+            Not only did they find the original order, but we also received it in time.
+            Excellent!"</p>
+        </div>
+
+        <div class="box">
+          <div class="item">
+            <img src="./src/images/image-irene.jpg" alt="Irene Roberts ">
+            <p class="box__nome">Irene Roberts <span>Verified Buyer</span></p>
+          </div>
+
+          <p class="box__comment">"Customer service is always excellent and very quick turn around. Completely
+            delighted with the simplicity of the purchase and the speed of delivery."</p>
+        </div>
+
+        <div class="box">
+          <div class="item">
+            <img src="./src/images/image-anne.jpg" alt="Anne Wallace">
+            <p class="box__nome">Anne Wallace <span>Verified Buyer</span></p>
+          </div>
+
+          <p class="box__comment">"Put an order with this company and can only praise them for the very high
+            standard. Will definitely use them again and recommend them to everyone!"</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >. Coded by <a href="https://www.linkedin.com/in/rodrigo-faria-000790263/" target="_blank">Rodrigo Faria</a>.
+    </footer>
+
+    <!--font-awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>
