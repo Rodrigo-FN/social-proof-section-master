@@ -25,6 +25,8 @@
 
 
 @media (min-width: 992px) {
+  
+
     .container {
         display: grid;
         grid-template-columns: repeat(2, auto);
@@ -37,10 +39,8 @@
         ;
         padding: 3rem;
         margin: 0 auto;
-        height: 100vh;
     }
 
-    
     /* Cabecalho */
     
     .cabecalho {
